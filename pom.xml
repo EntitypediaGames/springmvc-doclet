@@ -9,16 +9,16 @@
 
     <artifactId>sdoclet</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>Swagger Spring MVC Doclet</name>
     <description>Doclet generating Swagger specification out of a set of interfaces, models and controllers</description>
     <url>http://games.entitypedia.org/gameframework</url>
 
     <scm>
-        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</connection>
-        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</developerConnection>
-        <url>https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</url>
+        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/trunk</connection>
+        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/trunk</developerConnection>
+        <url>https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/</url>
     </scm>
 
     <repositories>
