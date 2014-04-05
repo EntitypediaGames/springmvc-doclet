@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -10,16 +9,16 @@
 
     <artifactId>sdoclet</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Swagger Spring MVC Doclet</name>
     <description>Doclet generating Swagger specification out of a set of interfaces, models and controllers</description>
     <url>http://games.entitypedia.org/gameframework</url>
 
     <scm>
-        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/trunk</connection>
-        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/trunk</developerConnection>
-        <url>https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/</url>
+        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</connection>
+        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</developerConnection>
+        <url>https://dev.entitypedia.org/svn/entitypedia/apps/springmvc-doclet/tags/sdoclet-1.0.0</url>
     </scm>
 
     <repositories>
