@@ -1,0 +1,1 @@
+This folder contains a doclet for generating Swagger API specification for Spring MVC. Inspired by https://github.com/ryankennedy/swagger-jaxrs-doclet
