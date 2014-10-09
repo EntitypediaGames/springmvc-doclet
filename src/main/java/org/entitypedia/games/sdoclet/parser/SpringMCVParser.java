@@ -25,6 +25,8 @@ public class SpringMCVParser {
     public static final String REQUEST_PARAM_REQUIRED = "org.springframework.web.bind.annotation.RequestParam.required";
     public static final String REQUEST_MAPPING_VALUE = "org.springframework.web.bind.annotation.RequestMapping.value";
     public static final String REQUEST_MAPPING_METHOD = "org.springframework.web.bind.annotation.RequestMapping.method";
+    public static final String REQUEST_MAPPING_PRODUCES = "org.springframework.web.bind.annotation.RequestMapping.produces";
+    public static final String REQUEST_MAPPING_CONSUMES = "org.springframework.web.bind.annotation.RequestMapping.consumes";
 
     public static final String TAG_PREFIX = "spring-mvc-doclet.";
     public static final String PATH_TAG = TAG_PREFIX + "path";
@@ -172,7 +174,17 @@ public class SpringMCVParser {
                             //operation.setProtocols(DocletOptions.PROTOCOLS);
 
                             if (null != findAnnotationDesc(cMethod, RESPONSE_BODY)) {
-                                operation.setProduces(DocletOptions.PRODUCES);
+                                AnnotationDesc.ElementValuePair produces = findElementValuePair(requestMapping, REQUEST_MAPPING_PRODUCES);
+                                if (null != produces && null != produces.value() && produces.value().value() instanceof AnnotationValue[]) {
+                                    AnnotationValue[] values = (AnnotationValue[]) produces.value().value();
+                                    List<String> types = new ArrayList<>();
+                                    for (AnnotationValue type : values) {
+                                        types.add(type.value().toString());
+                                    }
+                                    operation.setProduces(types);
+                                } else {
+                                    operation.setProduces(DocletOptions.PRODUCES);
+                                }
                             }
 
                             if (null != findAnnotationDesc(cMethod, DEPRECATED)) {
@@ -185,7 +197,17 @@ public class SpringMCVParser {
                             hasRequestBody = false;
                             operation.setParameters(getParameters(resolvedTypeParameters, iMethod, cMethod));
                             if (hasRequestBody) {
-                                operation.setConsumes(DocletOptions.CONSUMES);
+                                AnnotationDesc.ElementValuePair consumes = findElementValuePair(requestMapping, REQUEST_MAPPING_CONSUMES);
+                                if (null != consumes && null != consumes.value() && consumes.value().value() instanceof AnnotationValue[]) {
+                                    AnnotationValue[] values = (AnnotationValue[]) consumes.value().value();
+                                    List<String> types = new ArrayList<>();
+                                    for (AnnotationValue type : values) {
+                                        types.add(type.value().toString());
+                                    }
+                                    operation.setConsumes(types);
+                                } else {
+                                    operation.setConsumes(DocletOptions.CONSUMES);
+                                }
                             }
 
                             //operation.setResponseMessages();
