@@ -13,9 +13,9 @@ import java.util.Map;
  * <code>-doclet</code> followed by the fully-qualified
  * name of the starting class on the javadoc tool command line.
  *
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  * @see com.sun.javadoc.Doclet
- * @see <a href=https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
+ * @see <a href="https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
  */
 public class SpringMVCDoclet {
 
@@ -35,7 +35,9 @@ public class SpringMVCDoclet {
      * Generate documentation here.
      * This method is required for all doclets.
      *
+     * @param doc documentation root
      * @return true on success.
+     * @throws IOException IOException
      */
     public static boolean start(RootDoc doc) throws IOException {
         DocletOptions options = DocletOptions.parse(doc.options());
@@ -46,11 +48,12 @@ public class SpringMVCDoclet {
      * Check for doclet-added options.  Returns the number of
      * arguments you must specify on the command line for the
      * given option.  For example, "-d docs" would return 2.
-     * <p/>
+     * <p>
      * This method is required if the doclet contains any options.
      * If this method is missing, Javadoc will print an invalid flag
      * error for every option.
      *
+     * @param option option
      * @return number of arguments on the command line for an option
      * including the option name itself.  Zero return means
      * option not known.  Negative value means error occurred.
@@ -67,7 +70,7 @@ public class SpringMVCDoclet {
     /**
      * Return the version of the Java Programming Language supported
      * by this doclet.
-     * <p/>
+     * <p>
      * This method is required by any doclet supporting a language version
      * newer than 1.1.
      *

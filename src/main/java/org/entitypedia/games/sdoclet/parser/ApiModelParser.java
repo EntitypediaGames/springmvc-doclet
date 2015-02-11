@@ -8,8 +8,8 @@ import org.entitypedia.games.sdoclet.swagger.model.ModelProperty;
 import java.util.*;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
- * @see <a href=https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @see <a href="https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
  */
 public class ApiModelParser {
     private final DocletOptions options;

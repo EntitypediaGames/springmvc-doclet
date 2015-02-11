@@ -12,7 +12,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
 public class SpringMCVParser {
 
@@ -28,7 +28,7 @@ public class SpringMCVParser {
     public static final String REQUEST_MAPPING_PRODUCES = "org.springframework.web.bind.annotation.RequestMapping.produces";
     public static final String REQUEST_MAPPING_CONSUMES = "org.springframework.web.bind.annotation.RequestMapping.consumes";
 
-    public static final String TAG_PREFIX = "spring-mvc-doclet.";
+    public static final String TAG_PREFIX = "spring.mvc.doclet.";
     public static final String PATH_TAG = TAG_PREFIX + "path";
     public static final String TOS_TAG = TAG_PREFIX + "termsOfServiceUrl";
     public static final String CONTACT_TAG = TAG_PREFIX + "contact";

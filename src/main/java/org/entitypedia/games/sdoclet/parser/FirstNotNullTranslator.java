@@ -9,8 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
- * @see <a href=https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @see <a href="https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
  */
 public class FirstNotNullTranslator implements Translator {
 

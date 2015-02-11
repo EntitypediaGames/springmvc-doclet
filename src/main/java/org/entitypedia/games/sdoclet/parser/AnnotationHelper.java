@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
- * @see <a href=https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @see <a href="https://github.com/ryankennedy/swagger-jaxrs-doclet">swagger-jaxrs-doclet</a>
  */
 public class AnnotationHelper {
 
@@ -28,6 +28,9 @@ public class AnnotationHelper {
 
     /**
      * Determines the String representation of the object Type.
+     *
+     * @param type type
+     * @return String representation of the object Type
      */
     public static String typeOf(Type type) {
         String javaType = type.qualifiedTypeName();

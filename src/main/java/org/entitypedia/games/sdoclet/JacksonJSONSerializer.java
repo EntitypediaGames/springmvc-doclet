@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
 public class JacksonJSONSerializer implements SwaggerSerializer {
 
