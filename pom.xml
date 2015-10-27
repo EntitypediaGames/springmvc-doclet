@@ -9,7 +9,7 @@
 
     <artifactId>springmvc-doclet</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <name>Swagger Spring MVC Doclet</name>
     <description>Doclet generating Swagger specification out of a set of interfaces, models and controllers</description>
@@ -26,7 +26,8 @@
         <connection>scm:git:https://github.com/EntitypediaGames/springmvc-doclet.git</connection>
         <developerConnection>scm:git:git@github.com:EntitypediaGames/springmvc-doclet.git</developerConnection>
         <url>https://github.com/EntitypediaGames/springmvc-doclet</url>
-    </scm>
+      <tag>springmvc-doclet-1.0.1</tag>
+  </scm>
 
     <issueManagement>
         <system>Github</system>
